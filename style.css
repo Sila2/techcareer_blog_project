@@ -49,6 +49,9 @@ ul {
     overflow: hidden;
 }
 
+
+/* 5 satır gösterir */
+
 .line-clamp5 {
     display: -webkit-box;
     -webkit-line-clamp: 5;
@@ -81,6 +84,29 @@ header {
     background: rgb(149, 200, 251);
     color: black;
     opacity: .8;
+}
+
+
+/* main */
+
+.left_side {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.left_side .card-title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.left_side .card-text {
+    text-align: justify;
+    text-indent: .8rem;
+}
+
+.left_side img {
+    height: 25rem;
 }
 
 
