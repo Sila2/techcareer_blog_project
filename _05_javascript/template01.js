@@ -631,9 +631,12 @@ equationWithUnKnow();
 //
 //
 let toFahrenhayt = function() {
-    let degree, result;
-    degree = Number(prompt("Lütfen "))
-}
+        let degree, result;
+        degree = Number(prompt("Lütfen dereceyi giriniz"));
+        result = (degree * 9 / 5) + 32;
+        console.log(result)
+    }
+    // toFahrenhayt();
 
 
 //Örnek6:  1'den 10'a kadar sayıların toplamı ancak 5'e bölünebilen sayılar hariç
