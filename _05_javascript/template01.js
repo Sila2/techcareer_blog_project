@@ -640,74 +640,46 @@ let toFahrenhayt = function() {
 //
 //
 let sumBut = () => {
-        let sum
-        for (i = 1; i < 10; i++) {
-            if (i % 5 === 0) {
-                continue;
-                sum += i;
-            }
+    let sum = 0; //başlangıç bir değer: sıfır etkisiz toplama
+    for (i = 1; i < 10; i++) {
+        if (i % 5 === 0) {
+            continue;
+            sum += i;
         }
-        sumBut();
+        console.log("toplam: " + sum)
+    }
+}
+sumBut();
 
 
-        //Örnek7:
-        // Kullanıcıdan alınan sayıya göre random sayılar oluştursun
-        // 0-) ilk ve son sayının toplamı ?
-        // 1-) Toplamları
-        // 2-) Ortalaması
-        // 3-) Tek sayı toplamları
-        // 4-) Kaç tane Tek sayı 
-        // 5-) çift sayı toplamları
-        // 6-) çift tane Tek sayı 
-        //
-        //
-
-        console.log("sayı gir.")
-        let dizi = []
-
-        var x1 = Number(prompt('sayı gir'))
-        let dizi = [];
-
-        if (prompt('sayı')) {
-            dizi.push;
-        }
-
-        toplam(dizi)
-
-        function toplam(dizi[]) {
-            for (let i = 0)
-                console.log(a + b)
-        }
-
-        function cıkarma() {
-            console.log()
-        }
+//Örnek7:
+// Kullanıcıdan alınan sayıya göre random sayılar oluştursun
+// 0-) ilk ve son sayının toplamı ?
+// 1-) Toplamları
+// 2-) Ortalaması
+// 3-) Tek sayı toplamları
+// 4-) Kaç tane Tek sayı 
+// 5-) çift sayı toplamları
+// 6-) çift tane Tek sayı 
+//
+//
 
 
+//Random
+let rndArray = () => {
+    //değişkenleri(variable)
+    let rndNumber, firstEndSum = 0,
+        number, array = [];
+    number = Number(prompt("Lütfen bir sayı giriniz"));
+    //döngüde rastgele sayı oluşturmak
+    for (let i = 0; i < number; i++) {
+        rndNumber = Number(Math.round(Math.random() * 9 + 1));
+        array[i] = rndNumber;
+    }
+    console.log(array)
+    firstEndSum = array[0] + array[array.length - 1];
+    console.log(firstEndSum)
+}
 
-
-
-
-
-
-
-
-
-
-
-
-        ///////////////////////////////////////////
-        //arrayleri öğrendiğinde tekrar bak
-        var x1 = Number(prompt('sayı gir'))
-
-        toplam(x1)
-
-
-        function toplam(a, b) {
-            console.log(a + b)
-        }
-
-        function ort() {
-
-        }
-        //////////////////////////////////////////////
+//sonarQube
+rndArray();

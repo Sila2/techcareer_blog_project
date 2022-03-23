@@ -7,7 +7,7 @@
 
 
 /****************************************************
-//Örnek: 1. dereceden 2 bilinmeyenl, denklem
+//Örnek: 1. dereceden 2 bilinmeyenli denklem
 //Kullanıcıdan aldığımız 2 değişkeni hesaplatalım?
 //y=3x+5k; x ve k kullanıcıdan alınan sayılara göre hesaplama yapılacaktır. (Arrow function)
 *****************************************************/
@@ -26,9 +26,36 @@ let equationWithUnKnow = () => {
 
 /****************************************************
 //Örnek: 2. dereceyi fahrenhaya çeviren function (Anonymous function)
+//Formül: (dereceSayi * 9 / 5) + 32;
 
 *****************************************************/
 
+let toFahrenhayt = function() {
+        let degree, result;
+        degree = Number(prompt("Lütfen dereceyi giriniz"));
+        result = (degree * 9 / 5) + 32;
+        console.log(result)
+    }
+    // toFahrenhayt();
+
+
+/****************************************************
+//Örnek: 1'den 10'a kadar sayıların toplamı ancak 5'e bölünebilen sayılar hariç
+// continue
+
+*****************************************************/
+
+let totalfiveExcluded = () => {
+    let sum = 0; //başlangıç bir değer: sıfır etkisiz toplama
+    for (let i = 1; i <= 10; i = i + 1) {
+        if (i % 5 === 0)
+            continue;
+        sum += i;
+    }
+    console.log("toplam: " + sum)
+}
+
+totalfiveExcluded();
 
 
 
@@ -37,7 +64,20 @@ let equationWithUnKnow = () => {
 
 *****************************************************/
 
+let evenOdd = () => {
 
+    let even = 0,
+        odd = 0;
+    for (let i = 1; i <= 99; i++) {
+        if (i % 2 === 0) {
+            even++;
+        } else {
+            odd++;
+        }
+    }
+    console.log("1-99 arasında " + even + " çift, " + odd + " tek sayı vardır.")
+}
+evenOdd();
 
 
 
@@ -67,11 +107,8 @@ let equationWithUnKnow = () => {
 
 *****************************************************/
 
-/****************************************************
-//Örnek6: 1'den 10'a kadar sayıların toplamı ancak 5'e bölünebilen sayılar hariç
-// continue
 
-*****************************************************/
+
 
 /****************************************************
 //Örnek: Kullanıcıdan alınan sayıya göre random sayılar oluştursun
@@ -109,3 +146,7 @@ let equationWithUnKnow = () => {
 
 
 *****************************************************/
+
+///////////////////////////////////////////////////////
+//debug nedir ?
+//debug nasıl atılır ?
