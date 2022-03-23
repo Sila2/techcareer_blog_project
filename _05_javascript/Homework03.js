@@ -45,17 +45,17 @@ let toFahrenhayt = function() {
 
 *****************************************************/
 
-let totalfiveExcluded = () => {
-    let sum = 0; //başlangıç bir değer: sıfır etkisiz toplama
-    for (let i = 1; i <= 10; i = i + 1) {
-        if (i % 5 === 0)
-            continue;
-        sum += i;
-    }
-    console.log("toplam: " + sum)
-}
+// let totalfiveExcluded = () => {
+//     let sum = 0; //başlangıç bir değer: sıfır etkisiz toplama
+//     for (let i = 1; i <= 10; i = i + 1) {
+//         if (i % 5 === 0)
+//             continue;
+//         sum += i;
+//     }
+//     console.log("toplam: " + sum)
+// }
 
-totalfiveExcluded();
+// totalfiveExcluded();
 
 
 
@@ -64,36 +64,34 @@ totalfiveExcluded();
 
 *****************************************************/
 
-let evenOdd = () => {
+// let evenOdd = () => {
 
-    let even = 0,
-        odd = 0;
-    for (let i = 1; i <= 99; i++) {
-        if (i % 2 === 0) {
-            even++;
-        } else {
-            odd++;
-        }
-    }
-    console.log("1-99 arasında " + even + " çift, " + odd + " tek sayı vardır.")
-}
-evenOdd();
-
-
-
-/****************************************************
-//Örnek: 2 Dereceyi fahrenhaya çeviren function (Anonymous function)
-//Kullanıcıdan alınan dereceyi Fahrenhata çeviren function (Arrow Function)
-//Formül: (dereceSayi * 9 / 5) + 32;
-
-*****************************************************/
+//         let even = 0,
+//             odd = 0;
+//         for (let i = 1; i <= 99; i++) {
+//             if (i % 2 === 0) {
+//                 even++;
+//             } else {
+//                 odd++;
+//             }
+//         }
+//         console.log("1-99 arasında " + even + " çift, " + odd + " tek sayı vardır.")
+//     }
+//evenOdd();
 
 
 /****************************************************
-//Örnek: 3 Dört işlem
+//Örnek: Dört işlem
 //4+3*2(3:3-1*6+9:1+(3:3)) 
 
 *****************************************************/
+
+// let operation = () => {
+//     let result = (4 + 3 * 2(3 / 3 - 1 * 6 + 9 / 1 + (3 / 3)));
+//     // result = Number(4 + 3 * 2(3 / 3 - 1 * 6 + 9 / 1 + (3 / 3)));
+//     console.log(result)
+// }
+// operation();
 
 
 /****************************************************
@@ -101,13 +99,41 @@ evenOdd();
 
 *****************************************************/
 
+let passw = () => {
+        // let password = [];
+        // let repassword = [];
+        // password = prompt("şifrenizi girin");
+        // for (let i = 0; i < password.length; i++) {
+        //     console.log("*")
+        // }
+        // repassword = prompt("şifrenizi tekrar girin");
+        // repassword.match(password);
+
+        let password = prompt("şifrenizi girin");
+        let repassword;
+        for (let i = 0; i < password.length; i++) {
+            console.log("*")
+        }
+        repassword = prompt("şifrenizi tekrar girin");
+        if (password == repassword) {
+            console.log("şifre doğru")
+        } else {
+            console.log("şifre yanlış")
+        }
+    }
+    //passw();
 
 /****************************************************
 //Örnek: 5 Kullanıcının Girdiği Sayının Negatif mi, Pozitif mi Olduğunu Bulan function(anonymous)
 
 *****************************************************/
 
-
+// let isNegative = () => {
+//         let number = Number(prompt('Lütfen bir sayı giriniz'))
+//         let result = number < 0 ? 'negatif' : 'pozitif'
+//         console.log(result)
+//     }
+//isNegative();
 
 
 /****************************************************
@@ -119,16 +145,65 @@ evenOdd();
 // 4-) Kaç tane Tek sayı 
 // 5-) çift sayı toplamları
 // 6-) çift tane Tek sayı 
-
-
 *****************************************************/
+
+let rndNumber = () => {
+    //değişkenleri(variable)
+    let rndNumber, firstEndSum = 0,
+        sum = 0,
+        avrg = 0,
+        even = 0,
+        evenSum = 0;
+    odd = 0, oddSum = 0, number, array = [];
+    number = Number(prompt("Lütfen bir sayı giriniz"));
+    //döngüde rastgele sayı oluşturmak
+    for (let i = 0; i < number; i++) {
+        rndNumber = Number(Math.round(Math.random() * 9 + 1));
+        array[i] = rndNumber;
+        sum += rndNumber;
+        if (rndNumber % 2 == 0) {
+            even++;
+            evenSum += rndNumber;
+        } else {
+            odd++;
+            oddSum += rndNumber;
+        }
+    }
+    console.log(array)
+    firstEndSum = array[0] + array[array.length - 1];
+    avrg = sum / number;
+    console.log("ilk ve son sayının toplamı: " + firstEndSum);
+    console.log("Toplamları: " + Sum);
+    console.log("Ortalaması: " + avrg);
+    console.log("Tek sayı toplamları: " + oddSum);
+    console.log("Kaç tane Tek sayı: " + odd);
+    console.log("çift sayı toplamları: " + evenSum);
+    console.log("çift tane Tek sayı : " + even);
+}
+rndNumber();
+
 
 
 /****************************************************
 //Örnek: Kullanıcının Girdiği Sayının Faktöriyel hesaplama
-
-
 *****************************************************/
+
+// let factorial = () => {
+//     //değişkenleri(variable)
+//     let rndNumber, firstEndSum = 0,
+//         number, array = [];
+//     number = Number(prompt("Lütfen bir sayı giriniz"));
+//     //döngüde rastgele sayı oluşturmak
+//     for (let i = 0; i < number; i++) {
+//         rndNumber = Number(Math.round(Math.random() * 9 + 1));
+//         array[i] = rndNumber;
+//     }
+//     console.log(array)
+//     firstEndSum = array[0] + array[array.length - 1];
+//     console.log(firstEndSum)
+// }
+// factorial();
+
 
 /****************************************************
 //Örnek: Kullanıdan aldığımız kelimeyi tersine çeviren program

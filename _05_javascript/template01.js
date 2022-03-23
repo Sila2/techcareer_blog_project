@@ -245,7 +245,7 @@ multiple comment
 //     console.log("Burası kesin çalışacak.");
 //db.close()
 //socket.close()
-}
+//
 
 //istisna fırlatırız
 //throw "sayıyı sıfıra bölemezsin"
@@ -394,12 +394,12 @@ multiple comment
 //     console.log("sayı pozitif");
 // }
 
-// () => {
-//     let number = Number(prompt("Lütfen bir sayı girin"));
-//     let result = (number < 0) ? "negatif" : "pozitif";
-//     console.log(result)
+// let isNegative = () => {
+//   let number = Number(prompt('Lütfen bir sayı giriniz'))
+//   let result = number < 0 ? 'negatif' : 'pozitif'
+//   console.log(result)
 // }
-// isNegative(); - 5
+//isNegative();
 
 
 //////kullanıcıdan bir sayı girilecek tek mi çift mi
