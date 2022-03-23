@@ -59,41 +59,8 @@ not();
 
 
 
-
-
-
-
-
-
-
 /****************************************************
 //For ile while döngüsü arasındaki fark nedir ?
 *****************************************************/
 
 //For ve While döngüleri benzer işlevleri yerine getirebilir. While döngüsü belirtilen şart sağlanana kadar devam eder ve sağlandığında döngü sona erer. For döngüsü ise belirtilen sayı kadar döngüyü döndürür.
-
-
-
-/****************************************************
-//For ile while döngüsü arasındaki fark nedir ?
-*****************************************************/
-
-
-/****************************************************
-//S.O.L.I.D
-//Design Pattern
-*****************************************************/
-
-
-/****************************************************
-//Örnek: 1. dereceden 2 bilinmeyenl, denklem
-//Kullanıcıdan aldığımız 2 değişkeni hesapşatalım?
-//y=3x+5k; x ve k kullanıcıdan alınan sayılara göre hesaplama yapılacaktır. (Arrow function)
-*****************************************************/
-
-
-
-/****************************************************
-//Örnek: 2. dereceyi fahrenhaya çeviren function (Anonymous function)
-
-*****************************************************/
