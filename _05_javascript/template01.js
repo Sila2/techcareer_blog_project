@@ -535,7 +535,7 @@ let dizi = ['html', 'css', 'js', 'Javascript']
 
 // let dizi=[1,2,5,3,1];
 // console.log(dizi);
-// console.log(dizi[5]);
+// console.log(dizi[5]);    //==>5.indis=6.eleman
 // console.log(dizi[dizi.length-1]);
 // console.log("+++++++++++++++++++++++")
 
@@ -608,6 +608,63 @@ let dizi = ['html', 'css', 'js', 'Javascript']
 // console.log(dizi)
 // for(let i )
 
+
+//concat (Birleştirmek)
+//dizide birleştirmek string birleştirmek için kullanabiliriz.
+function concatTutorials() {
+    let kelime1 = 'Merhabalar'
+    let kelime2 = ' Nasılsınız'
+
+    let birlestir1 = kelime1 + kelime2
+    console.log('1. artı birleştir: ' + birlestir1)
+
+    let birlestir2 = kelime1.concat(kelime2);
+    console.log('2. concat birleştir: ' + birlestir2)
+
+    //dizi birleştirmek
+    const dizi1 = ['1', '2', '3', ''];
+    const dizi2 = ['4', '5', '6'];
+
+    //string olarak birleştirir
+    let diziBirlestir1 = dizi1 + dizi2;
+    console.log(diziBirlestir1)
+
+    //dizi olarak birleştirir
+    let diziBirlestir2 = dizi1.concat(dizi2);
+    console.log(diziBirlestir2)
+
+}
+//concatTutorials();
+
+
+//******************************************* */
+//dizilerde topluca eklemej veya çıkarmak
+//+++ splice() ++++ Ekle veya Sil
+function spliceTutorials() {
+    let dizi55 = [1, 2, 3, 4, 5, 6, 7];
+    console.log(dizi55);
+
+    //parametredeki 1.eleman: indisi belirlemek için
+    //parametredeki 2.eleman: kaç tane silinceğini
+    //  dizi55.splice(2, 4) //2.indisten(3.eleman) 4 tane sil  indis=0 başlar
+    //   console.log(dizi55)
+
+    //parametredeki 1.eleman: indisi belirlemek için
+    dizi55.splice(3, 0, 'ekledim', "Yeni"); //0.indisten başla ekleme
+    console.log(dizi55)
+}
+//spliceTutorials();
+
+// +++ slice() +++ dizi kopyalamalak
+function sliceTutorials() {
+    let eskiDizi = [1, 2, 3, 4, 5, 6, 7];
+    console.log(eskiDizi)
+
+    let yeniDizi = eskiDizi.slice(3) //3.indisten başla sonuna kadar kopyala yeniDizi ata
+    console.log(yeniDizi)
+}
+
+//sliceTutorials();
 //+++++++++++++++++++++++++++++++++++++++++
 
 // Örnek: 1.dereceden 2 bilinmeyenli denklem
@@ -616,13 +673,13 @@ let dizi = ['html', 'css', 'js', 'Javascript']
 //
 //
 let equationWithUnKnow = () => {
-    let number1, number2, results;
-    number1 = Number(prompt("1.sayı"));
-    number2 = Number(prompt("2.sayı"));
-    result = 3 * number1 + 5 * number2;
-    console.log(result)
-}
-equationWithUnKnow();
+        let number1, number2, results;
+        number1 = Number(prompt("1.sayı"));
+        number2 = Number(prompt("2.sayı"));
+        result = 3 * number1 + 5 * number2;
+        console.log(result)
+    }
+    //equationWithUnKnow();
 
 
 //Örnek: 2 Dereceyi fahrenhaya çeviren function (Anonymous function)
@@ -643,16 +700,16 @@ let toFahrenhayt = function() {
 //
 //
 let sumBut = () => {
-    let sum = 0; //başlangıç bir değer: sıfır etkisiz toplama
-    for (i = 1; i < 10; i++) {
-        if (i % 5 === 0) {
-            continue;
-            sum += i;
+        let sum = 0; //başlangıç bir değer: sıfır etkisiz toplama
+        for (i = 1; i < 10; i++) {
+            if (i % 5 === 0) {
+                continue;
+                sum += i;
+            }
+            console.log("toplam: " + sum)
         }
-        console.log("toplam: " + sum)
     }
-}
-sumBut();
+    //sumBut();
 
 
 //Örnek7:
@@ -685,4 +742,167 @@ let rndArray = () => {
 }
 
 //sonarQube
-rndArray();
+//rndArray();
+
+/////////////////////////////
+//debug nedir?
+//debug nasıl yapıılır?
+// let sayi11 = 11;
+// let sayi22 = 22;
+// let sonuc = sayi11 + sayi22;
+// console.log(sonuc);
+
+//////////////////////////////
+
+
+function diziBaslangic() {
+    //let dizi=[1,2,3];  //okunabilirliği, hız açısından iyidir.
+    let dizi = new Array(1, 2, 3);
+    return dizi;
+}
+
+function diziVeriAl(temp) {
+    console.log(temp)
+}
+
+//monad yapısı - fonksiyon içinde fonksiyon çağrılması
+diziVeriAl(diziBaslangic());
+
+
+////////////////////////////////////
+//data
+let dateTutorials = () => {
+    let tarih = new Date();
+
+    //get
+    console.log(tarih.getHours())
+        //console.log(tarih.getFullYear());
+
+    //set
+    console.log(new Date("2015-1-1"));
+}
+dateTutorials();
+
+let dateShow = () => {
+        // let tarih = new Date();
+        // let saat=tarih.getHours()
+
+        console.log(new Date().getHours())
+        let ternary = (new Date().getHours() >= 20) ? "az kaldı" : "çok zaman var";
+        console.log(ternary);
+    }
+    //dateShow();
+
+///////////////////////////////////
+//Object: bir varlığın özelliklerinin toplamıdır.
+//object camelCase
+//literal Object(Arrow Function)
+// let object = () => {
+
+//         let array1 = new Array();
+//         console.log(array1)
+
+//         console.log("++++++++++++++++++++++++++++")
+
+//         let obj1 = new Object();
+//         console.log(obj1)
+//     }
+//object();
+
+// let object2 = () => {
+//     let person = {};
+
+//     //değerler vermek istiyorum
+//     person.firstName = "Hamit";
+//     person.job = "Computer Engineer";
+//     person.middleName = "Göbek Adı";
+
+//     console.log(person);
+// }
+// object2();
+
+//+++++++++++++++++++++++++
+// let object2=()=>{
+//     let person={};
+//     //değerler vermek istiyorum
+//     person.firstName="Hamit";
+//     person.job="Computer Engineer";
+//     person.middleName="Göbek Adı";
+
+//     console.log(person.middleName.toUpperCase());
+// }
+// object2();
+
+//+++++++++++++++++++++++++
+//Object yeni attribures eklemek
+// let object2 = () => {
+//     let person = {
+//         firstName: "Hamit",
+//         job: "Computer Engineer",
+//         middleName: "Göbek Adı"
+//     };
+//     person.lastName = "Mızrak";
+//     console.log(person.middleName.toUpperCase());
+//     person.middleName = "İkinci ismi değişti";
+//     console.log(person);
+// }
+// object2();
+
+//++++++++++++++++++++++++++
+//object function
+// let object2 = () => {
+//     let person = {
+//         firstName: "Hamit",
+//         job: "Computer Engineer",
+//         middleName: "Göbek Adı"
+//         hesaplama: function(sayi1, sayi2) {
+//             return sayi1 + sayi2;
+//         }
+//     };
+
+//     console.log(person.hesaplama(10, 20));
+// }
+// object2();
+
+
+//Nested Object: Obje içinde Object
+// let object2 = () => {
+//     let person = {
+//         firstName: "Hamit",
+//         job: "Computer Engineer",
+//         middleName: "Göbek Adı"
+//         hesaplama: function(sayi1, sayi2) {
+//             return sayi1 + sayi2;
+//         }
+//         damar: {
+//             damarAdi: "Toplar Damar",
+//             damarTuru: "damar turu 4521"
+//         }
+//     };
+//     console.log(person)
+//     console.log(person.damar.damarAdi.endsWith("r"));
+// }
+// object2();
+
+
+let object2 = () => {
+    let person = {
+        firstName: "Hamit",
+        job: "Computer Engineer",
+        middleName: "Göbek Adı"
+        hesaplama: function(sayi1, sayi2) {
+            return sayi1 + sayi2;
+        }
+        damar: {
+            damarAdi: "Toplar Damar",
+            damarTuru: "damar turu 4521"
+        }
+    };
+    console.log(person)
+    console.log(person["damar"]["damarAdi"]);
+}
+object2();
+
+
+///////////////////////////////////
+//constructor

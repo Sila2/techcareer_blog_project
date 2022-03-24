@@ -147,40 +147,40 @@ let passw = () => {
 // 6-) çift tane Tek sayı 
 *****************************************************/
 
-let rndNumber = () => {
-    //değişkenleri(variable)
-    let rndNumber, firstEndSum = 0,
-        sum = 0,
-        avrg = 0,
-        even = 0,
-        evenSum = 0;
-    odd = 0, oddSum = 0, number, array = [];
-    number = Number(prompt("Lütfen bir sayı giriniz"));
-    //döngüde rastgele sayı oluşturmak
-    for (let i = 0; i < number; i++) {
-        rndNumber = Number(Math.round(Math.random() * 9 + 1));
-        array[i] = rndNumber;
-        sum += rndNumber;
-        if (rndNumber % 2 == 0) {
-            even++;
-            evenSum += rndNumber;
-        } else {
-            odd++;
-            oddSum += rndNumber;
-        }
-    }
-    console.log(array)
-    firstEndSum = array[0] + array[array.length - 1];
-    avrg = sum / number;
-    console.log("ilk ve son sayının toplamı: " + firstEndSum);
-    console.log("Toplamları: " + Sum);
-    console.log("Ortalaması: " + avrg);
-    console.log("Tek sayı toplamları: " + oddSum);
-    console.log("Kaç tane Tek sayı: " + odd);
-    console.log("çift sayı toplamları: " + evenSum);
-    console.log("çift tane Tek sayı : " + even);
-}
-rndNumber();
+// let rndNumber = () => {
+//     //değişkenleri(variable)
+//     let rndNumber, firstEndSum = 0,
+//         sum = 0,
+//         avrg = 0,
+//         even = 0,
+//         evenSum = 0;
+//     odd = 0, oddSum = 0, number, array = [];
+//     number = Number(prompt("Lütfen bir sayı giriniz"));
+//     //döngüde rastgele sayı oluşturmak
+//     for (let i = 0; i < number; i++) {
+//         rndNumber = Number(Math.round(Math.random() * 9 + 1));
+//         array[i] = rndNumber;
+//         sum += rndNumber;
+//         if (rndNumber % 2 == 0) {
+//             even++;
+//             evenSum += rndNumber;
+//         } else {
+//             odd++;
+//             oddSum += rndNumber;
+//         }
+//     }
+//     console.log(array)
+//     firstEndSum = array[0] + array[array.length - 1];
+//     avrg = sum / number;
+//     console.log("ilk ve son sayının toplamı: " + firstEndSum);
+//     console.log("Toplamları: " + Sum);
+//     console.log("Ortalaması: " + avrg);
+//     console.log("Tek sayı toplamları: " + oddSum);
+//     console.log("Kaç tane Tek sayı: " + odd);
+//     console.log("çift sayı toplamları: " + evenSum);
+//     console.log("çift tane Tek sayı : " + even);
+// }
+// rndNumber();
 
 
 
@@ -188,21 +188,22 @@ rndNumber();
 //Örnek: Kullanıcının Girdiği Sayının Faktöriyel hesaplama
 *****************************************************/
 
-// let factorial = () => {
-//     //değişkenleri(variable)
-//     let rndNumber, firstEndSum = 0,
-//         number, array = [];
-//     number = Number(prompt("Lütfen bir sayı giriniz"));
-//     //döngüde rastgele sayı oluşturmak
-//     for (let i = 0; i < number; i++) {
-//         rndNumber = Number(Math.round(Math.random() * 9 + 1));
-//         array[i] = rndNumber;
-//     }
-//     console.log(array)
-//     firstEndSum = array[0] + array[array.length - 1];
-//     console.log(firstEndSum)
-// }
-// factorial();
+let factorial = () => {
+    let fact = 1,
+        number;
+    number = Number(prompt("Lütfen bir sayı giriniz"));
+    if (number == 1) {
+        console.log(number + "sayısının faktoriyeli: 1")
+    } else {
+        continue;
+    }
+    for (let i = 0; i < number; i++) {
+        fact *= number;
+    }
+    console.log(number + "sayısının faktoriyeli: " + fact)
+
+}
+factorial();
 
 
 /****************************************************
