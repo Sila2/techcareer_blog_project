@@ -1051,16 +1051,38 @@ let thisFunctionTutorials = () => {
         console.log(person.adSoyad())
     }
     //thisFunctionTutorials();
-    ////////////////////////
-    //Event: bir olaydan sonra meydana gelebilecek başka olaylar.
+
+//this
+//console.log(this)
+////////////////////////
+//Event: bir olaydan sonra meydana gelebilecek başka olaylar.
 
 function toplama() {
     alert("onclick Alert")
 }
-toplama();
+//onmouse
+//onkey
+//onchange
+//addEventListener
 
+//toplama();
 
+////////////////////////////////////////
+function changeParagraf() {
+    // alert("onclick Alert")
+    // document.getElementById("paragraf_id").innerHTML="<b>Ben Dom'dan geldim</b>";
+    // document.getElementById("paragraf_id").innerText="<b>Ben Dom'dan geldim</b>";
+    // document.getElementById("paragraf_id").innerHTML=Date();   
+    //Id ye göre olduğu için element (çünkü tek id olur, id ler aynı olmaz)   //name e göre olunca elements (birden fazla name yapısı olabilir)
+    //s takısı olunca [] dizi??
+    //genelde en çok id sine göre kullanılır.
 
+    //NAME göre çağırma
+    // document.getElementsByName("paragraf_name")[0].innerHTML="<b>Ben Dom'dan geldim</b>";
 
-//this
-//console.log(this)
+    //Class göre çağırma
+    // document.getElementsByClassName("paragraf_class")[0].innerHTML="<b>Ben Dom'dan geldim</b>";
+
+    //Tag'e göre çağırma
+    document.getElementsByTagName("p")[0].innerHTML = "<b>Ben Dom'dan geldim</b>";
+}
