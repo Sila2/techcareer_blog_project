@@ -609,189 +609,189 @@ let dizi = ['html', 'css', 'js', 'Javascript']
 // for(let i )
 
 
-//concat (Birleştirmek)
-//dizide birleştirmek string birleştirmek için kullanabiliriz.
-function concatTutorials() {
-    let kelime1 = 'Merhabalar'
-    let kelime2 = ' Nasılsınız'
+// //concat (Birleştirmek)
+// //dizide birleştirmek string birleştirmek için kullanabiliriz.
+// function concatTutorials() {
+//     let kelime1 = 'Merhabalar'
+//     let kelime2 = ' Nasılsınız'
 
-    let birlestir1 = kelime1 + kelime2
-    console.log('1. artı birleştir: ' + birlestir1)
+//     let birlestir1 = kelime1 + kelime2
+//     console.log('1. artı birleştir: ' + birlestir1)
 
-    let birlestir2 = kelime1.concat(kelime2);
-    console.log('2. concat birleştir: ' + birlestir2)
+//     let birlestir2 = kelime1.concat(kelime2);
+//     console.log('2. concat birleştir: ' + birlestir2)
 
-    //dizi birleştirmek
-    const dizi1 = ['1', '2', '3', ''];
-    const dizi2 = ['4', '5', '6'];
+//     //dizi birleştirmek
+//     const dizi1 = ['1', '2', '3', ''];
+//     const dizi2 = ['4', '5', '6'];
 
-    //string olarak birleştirir
-    let diziBirlestir1 = dizi1 + dizi2;
-    console.log(diziBirlestir1)
+//     //string olarak birleştirir
+//     let diziBirlestir1 = dizi1 + dizi2;
+//     console.log(diziBirlestir1)
 
-    //dizi olarak birleştirir
-    let diziBirlestir2 = dizi1.concat(dizi2);
-    console.log(diziBirlestir2)
+//     //dizi olarak birleştirir
+//     let diziBirlestir2 = dizi1.concat(dizi2);
+//     console.log(diziBirlestir2)
 
-}
-//concatTutorials();
-
-
-//******************************************* */
-//dizilerde topluca eklemej veya çıkarmak
-//+++ splice() ++++ Ekle veya Sil
-function spliceTutorials() {
-    let dizi55 = [1, 2, 3, 4, 5, 6, 7];
-    console.log(dizi55);
-
-    //parametredeki 1.eleman: indisi belirlemek için
-    //parametredeki 2.eleman: kaç tane silinceğini
-    //  dizi55.splice(2, 4) //2.indisten(3.eleman) 4 tane sil  indis=0 başlar
-    //   console.log(dizi55)
-
-    //parametredeki 1.eleman: indisi belirlemek için
-    dizi55.splice(3, 0, 'ekledim', "Yeni"); //0.indisten başla ekleme
-    console.log(dizi55)
-}
-//spliceTutorials();
-
-// +++ slice() +++ dizi kopyalamalak
-function sliceTutorials() {
-    let eskiDizi = [1, 2, 3, 4, 5, 6, 7];
-    console.log(eskiDizi)
-
-    let yeniDizi = eskiDizi.slice(3) //3.indisten başla sonuna kadar kopyala yeniDizi ata
-    console.log(yeniDizi)
-}
-
-//sliceTutorials();
-//+++++++++++++++++++++++++++++++++++++++++
-
-// Örnek: 1.dereceden 2 bilinmeyenli denklem
-// Kullanıcıdan aldığımız 2 değişkeni hesaplatarıalım?
-// y=3x+5k; x ve k kullanıcıdan alınan sayılara göre hesaplama yapılactır (Arrow function)
-//
-//
-let equationWithUnKnow = () => {
-        let number1, number2, results;
-        number1 = Number(prompt("1.sayı"));
-        number2 = Number(prompt("2.sayı"));
-        result = 3 * number1 + 5 * number2;
-        console.log(result)
-    }
-    //equationWithUnKnow();
+// }
+// //concatTutorials();
 
 
-//Örnek: 2 Dereceyi fahrenhaya çeviren function (Anonymous function)
-//Kullanıcıdan alınan dereceyi Fahrenhata çeviren function 
-//Formül: (dereceSayi * 9 / 5) + 32;
-//
-//
-let toFahrenhayt = function() {
-        let degree, result;
-        degree = Number(prompt("Lütfen dereceyi giriniz"));
-        result = (degree * 9 / 5) + 32;
-        console.log(result)
-    }
-    // toFahrenhayt();
+// //******************************************* */
+// //dizilerde topluca eklemej veya çıkarmak
+// //+++ splice() ++++ Ekle veya Sil
+// function spliceTutorials() {
+//     let dizi55 = [1, 2, 3, 4, 5, 6, 7];
+//     console.log(dizi55);
+
+//     //parametredeki 1.eleman: indisi belirlemek için
+//     //parametredeki 2.eleman: kaç tane silinceğini
+//     //  dizi55.splice(2, 4) //2.indisten(3.eleman) 4 tane sil  indis=0 başlar
+//     //   console.log(dizi55)
+
+//     //parametredeki 1.eleman: indisi belirlemek için
+//     dizi55.splice(3, 0, 'ekledim', "Yeni"); //0.indisten başla ekleme
+//     console.log(dizi55)
+// }
+// //spliceTutorials();
+
+// // +++ slice() +++ dizi kopyalamalak
+// function sliceTutorials() {
+//     let eskiDizi = [1, 2, 3, 4, 5, 6, 7];
+//     console.log(eskiDizi)
+
+//     let yeniDizi = eskiDizi.slice(3) //3.indisten başla sonuna kadar kopyala yeniDizi ata
+//     console.log(yeniDizi)
+// }
+
+// //sliceTutorials();
+// //+++++++++++++++++++++++++++++++++++++++++
+
+// // Örnek: 1.dereceden 2 bilinmeyenli denklem
+// // Kullanıcıdan aldığımız 2 değişkeni hesaplatarıalım?
+// // y=3x+5k; x ve k kullanıcıdan alınan sayılara göre hesaplama yapılactır (Arrow function)
+// //
+// //
+// let equationWithUnKnow = () => {
+//         let number1, number2, results;
+//         number1 = Number(prompt("1.sayı"));
+//         number2 = Number(prompt("2.sayı"));
+//         result = 3 * number1 + 5 * number2;
+//         console.log(result)
+//     }
+//     //equationWithUnKnow();
 
 
-//Örnek6:  1'den 10'a kadar sayıların toplamı ancak 5'e bölünebilen sayılar hariç
-//
-//
-let sumBut = () => {
-        let sum = 0; //başlangıç bir değer: sıfır etkisiz toplama
-        for (i = 1; i < 10; i++) {
-            if (i % 5 === 0) {
-                continue;
-                sum += i;
-            }
-            console.log("toplam: " + sum)
-        }
-    }
-    //sumBut();
+// //Örnek: 2 Dereceyi fahrenhaya çeviren function (Anonymous function)
+// //Kullanıcıdan alınan dereceyi Fahrenhata çeviren function 
+// //Formül: (dereceSayi * 9 / 5) + 32;
+// //
+// //
+// let toFahrenhayt = function() {
+//         let degree, result;
+//         degree = Number(prompt("Lütfen dereceyi giriniz"));
+//         result = (degree * 9 / 5) + 32;
+//         console.log(result)
+//     }
+//     // toFahrenhayt();
 
 
-//Örnek7:
-// Kullanıcıdan alınan sayıya göre random sayılar oluştursun
-// 0-) ilk ve son sayının toplamı ?
-// 1-) Toplamları
-// 2-) Ortalaması
-// 3-) Tek sayı toplamları
-// 4-) Kaç tane Tek sayı 
-// 5-) çift sayı toplamları
-// 6-) çift tane Tek sayı 
-//
-//
+// //Örnek6:  1'den 10'a kadar sayıların toplamı ancak 5'e bölünebilen sayılar hariç
+// //
+// //
+// let sumBut = () => {
+//         let sum = 0; //başlangıç bir değer: sıfır etkisiz toplama
+//         for (i = 1; i < 10; i++) {
+//             if (i % 5 === 0) {
+//                 continue;
+//                 sum += i;
+//             }
+//             console.log("toplam: " + sum)
+//         }
+//     }
+//     //sumBut();
 
 
-//Random
-let rndArray = () => {
-    //değişkenleri(variable)
-    let rndNumber, firstEndSum = 0,
-        number, array = [];
-    number = Number(prompt("Lütfen bir sayı giriniz"));
-    //döngüde rastgele sayı oluşturmak
-    for (let i = 0; i < number; i++) {
-        rndNumber = Number(Math.round(Math.random() * 9 + 1));
-        array[i] = rndNumber;
-    }
-    console.log(array)
-    firstEndSum = array[0] + array[array.length - 1];
-    console.log(firstEndSum)
-}
-
-//sonarQube
-//rndArray();
-
-/////////////////////////////
-//debug nedir?
-//debug nasıl yapıılır?
-// let sayi11 = 11;
-// let sayi22 = 22;
-// let sonuc = sayi11 + sayi22;
-// console.log(sonuc);
-
-//////////////////////////////
+// //Örnek7:
+// // Kullanıcıdan alınan sayıya göre random sayılar oluştursun
+// // 0-) ilk ve son sayının toplamı ?
+// // 1-) Toplamları
+// // 2-) Ortalaması
+// // 3-) Tek sayı toplamları
+// // 4-) Kaç tane Tek sayı 
+// // 5-) çift sayı toplamları
+// // 6-) çift tane Tek sayı 
+// //
+// //
 
 
-function diziBaslangic() {
-    //let dizi=[1,2,3];  //okunabilirliği, hız açısından iyidir.
-    let dizi = new Array(1, 2, 3);
-    return dizi;
-}
+// //Random
+// let rndArray = () => {
+//     //değişkenleri(variable)
+//     let rndNumber, firstEndSum = 0,
+//         number, array = [];
+//     number = Number(prompt("Lütfen bir sayı giriniz"));
+//     //döngüde rastgele sayı oluşturmak
+//     for (let i = 0; i < number; i++) {
+//         rndNumber = Number(Math.round(Math.random() * 9 + 1));
+//         array[i] = rndNumber;
+//     }
+//     console.log(array)
+//     firstEndSum = array[0] + array[array.length - 1];
+//     console.log(firstEndSum)
+// }
 
-function diziVeriAl(temp) {
-    console.log(temp)
-}
+// //sonarQube
+// //rndArray();
 
-//monad yapısı - fonksiyon içinde fonksiyon çağrılması
-diziVeriAl(diziBaslangic());
+// /////////////////////////////
+// //debug nedir?
+// //debug nasıl yapıılır?
+// // let sayi11 = 11;
+// // let sayi22 = 22;
+// // let sonuc = sayi11 + sayi22;
+// // console.log(sonuc);
+
+// //////////////////////////////
 
 
-////////////////////////////////////
-//data
-let dateTutorials = () => {
-    let tarih = new Date();
+// function diziBaslangic() {
+//     //let dizi=[1,2,3];  //okunabilirliği, hız açısından iyidir.
+//     let dizi = new Array(1, 2, 3);
+//     return dizi;
+// }
 
-    //get
-    console.log(tarih.getHours())
-        //console.log(tarih.getFullYear());
+// function diziVeriAl(temp) {
+//     console.log(temp)
+// }
 
-    //set
-    console.log(new Date("2015-1-1"));
-}
-dateTutorials();
+// //monad yapısı - fonksiyon içinde fonksiyon çağrılması
+// diziVeriAl(diziBaslangic());
 
-let dateShow = () => {
-        // let tarih = new Date();
-        // let saat=tarih.getHours()
 
-        console.log(new Date().getHours())
-        let ternary = (new Date().getHours() >= 20) ? "az kaldı" : "çok zaman var";
-        console.log(ternary);
-    }
-    //dateShow();
+// ////////////////////////////////////
+// //data
+// let dateTutorials = () => {
+//     let tarih = new Date();
+
+//     //get
+//     console.log(tarih.getHours())
+//         //console.log(tarih.getFullYear());
+
+//     //set
+//     console.log(new Date("2015-1-1"));
+// }
+// dateTutorials();
+
+// let dateShow = () => {
+//         // let tarih = new Date();
+//         // let saat=tarih.getHours()
+
+//         console.log(new Date().getHours())
+//         let ternary = (new Date().getHours() >= 20) ? "az kaldı" : "çok zaman var";
+//         console.log(ternary);
+//     }
+//     //dateShow();
 
 ///////////////////////////////////
 //Object: bir varlığın özelliklerinin toplamıdır.
@@ -885,52 +885,118 @@ let dateShow = () => {
 // object2();
 
 
-let object2 = () => {
-    let person = {
-        firstName: "Hamit",
-        job: "Computer Engineer",
-        middleName: "Göbek Adı"
-        hesaplama: function(sayi1, sayi2) {
-            return sayi1 + sayi2;
-        }
-        damar: {
-            damarAdi: "Toplar Damar",
-            damarTuru: "damar turu 4521"
-        }
-    };
-    console.log(person)
-    console.log(person["damar"]["damarAdi"]);
-}
-object2();
+// let object2 = () => {
+//     let person = {
+//         firstName: "Hamit",
+//         job: "Computer Engineer",
+//         middleName: "Göbek Adı"
+//         hesaplama: function(sayi1, sayi2) {
+//             return sayi1 + sayi2;
+//         }
+//         damar: {
+//             damarAdi: "Toplar Damar",
+//             damarTuru: "damar turu 4521"
+//         }
+//     };
+//     console.log(person)
+//     console.log(person["damar"]["damarAdi"]);
+// }
+// object2();
 
 
 ////////////////////////////
 
-let object2 = () => {
-    let person = {
-        firstName: "Hamit",
-        job: "Computer Engineer",
-        middleName: "Göbek Adı"
-        hesaplama: function(sayi1, sayi2) {
-            return sayi1 + sayi2;
-        }
-        damar: {
-            damarAdi: "Toplar Damar",
-            damarTuru: "damar turu 4521"
-        },
-        diller: ["Javascript", "Java", "c#", "Python"],
-        dillerOzellikler: {
-            roles: "asd"
-        }
-    };
-    console.log(person)
-    console.log(person["damar"]["damarAdi"]);
-    console.log(person.diller[0])
-}
-object2();
+// let object2 = () => {
+//     let person = {
+//         firstName: "Hamit",
+//         job: "Computer Engineer",
+//         middleName: "Göbek Adı"
+//         hesaplama: function(sayi1, sayi2) {
+//             return sayi1 + sayi2;
+//         }
+//         damar: {
+//             damarAdi: "Toplar Damar",
+//             damarTuru: "damar turu 4521"
+//         },
+//         diller: ["Javascript", "Java", "c#", "Python"],
+//         dillerOzellikler: {
+//             roles: "asd"
+//         }
+//     };
+//     console.log(person)
+//     console.log(person["damar"]["damarAdi"]);
+//     console.log(person.diller[0])
+// }
+// object2();
 
 ////////////////////////////////////////
+// let teplateLiteralTutorials = () => {
+//     let normalString = "Merhabalar çift tırnak";
+//     console.log(normalString);
 
+//     let normalString2 = 'Merhabalar çift tırnak';
+//     console.log(normalString2);
+
+//     //ES6
+//     let templateString = ´Merhaba backtick´;
+//     console.log(templateString);
+// }
+// templateLiteralTutorials();
+
+
+//////////////////////////////////////
+// let teplateLiteralTutorials = () => {
+//     let normalString = "Merhabalar çift tırnak";
+//     console.log(normalString);
+
+//     let normalString2 = 'Merhabalar çift tırnak';
+//     console.log(normalString2);
+
+//     //ES6
+//     let templateString = ´Merhaba backtick´;
+//     console.log(templateString);
+// }
+// templateLiteralTutorials();
+
+
+
+///////////////////////////////////////
+
+
+
+//2-)
+//interpolation: değişken çağırmak için ==> ´´
+let templateLiteralInterpolation = () => {
+        let adi = "Hamit",
+            soyadi = "Mızrak";
+        console.log("Adı: " + adi + " soyadı: " + soyadi);
+        //console.log(´Adı: $ { adi }
+        // Soyadı: $ { soyadi }´);
+    }
+    //templateLiteralInterpolation();
+
+//3-)
+//Html Template
+let templateLiteralHtmlTemplate = () => {
+    const adi = "Hamit",
+        soyadi = "Mızrak";
+
+    // const htmlShow =
+    //     "<ul>" +
+    //     "<li>" + adi + "</li>"
+    // "<li>" + soyadi + "</li>"
+    // "</ul>";
+    let html = ´ <
+        ul >
+        <
+        li > $ { adi } < /li> <
+    li > $ { soyadi } < /li> < /
+        ul >
+
+        ´;
+    document.body.innerHTML = html;
+}
+templateLiteralHtmlTemplate();
 
 
 ///////////////////////////////////
