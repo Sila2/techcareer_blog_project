@@ -963,56 +963,78 @@ let dizi = ['html', 'css', 'js', 'Javascript']
 ///////////////////////////////////////
 //1-)
 //Multi Line Template Literal
-let templateLiteralMultiLine = () => {
+// let templateLiteralMultiLine = () => {
 
-        //escape characters: \n 
-        let normalString = "Merhabalar nasılsınız\nAlt satır";
-        console.log(normalString);
+//     //escape characters: \n 
+//     let normalString = "Merhabalar nasılsınız\nAlt satır";
+//     console.log(normalString);
 
-        //ES6:
-        //Multi Line Template Literal
-        let templateString = `Merhabalar nasılsınız
-  Alt satır`;
-        console.log(templateString);
+//     //ES6:
+//     //Multi Line Template Literal
+//     let templateString = `Merhabalar nasılsınız
+//   Alt satır`;
+//     console.log(templateString);
 
-    }
-    //templateLiteralMultiLine();
+// }
+//templateLiteralMultiLine();
 
 
 //2-)
 //interpolation: değişken çağırmak için ==> ´´
-let templateLiteralInterpolation = () => {
-        let adi = "Hamit",
-            soyadi = "Mızrak";
-        console.log("Adı: " + adi + " soyadı: " + soyadi);
-        //console.log(´Adı: $ { adi }
-        // Soyadı: $ { soyadi }´);
-    }
-    //templateLiteralInterpolation();
+// let templateLiteralInterpolation = () => {
+//         let adi = "Hamit",
+//             soyadi = "Mızrak";
+//         console.log("Adı: " + adi + " soyadı: " + soyadi);
+//         //console.log(´Adı: $ { adi }
+//         // Soyadı: $ { soyadi }´);
+//     }
+//templateLiteralInterpolation();
 
 //3-)
 //Html Template
-let templateLiteralHtmlTemplate = () => {
-        const adi = "Hamit",
-            soyadi = "Mızrak";
+// let templateLiteralHtmlTemplate = () => {
+//         const adi = "Hamit",
+//             soyadi = "Mızrak";
 
-        // const htmlShow =
-        //     "<ul>" +
-        //     "<li>" + adi + "</li>"
-        // "<li>" + soyadi + "</li>"
-        // "</ul>";
-        let html = ´ <
-            ul >
-            <
-            li > $ { adi } < /li> <
-        li > $ { soyadi } < /li> < /
-        ul >
+//         // const htmlShow =
+//         //     "<ul>" +
+//         //     "<li>" + adi + "</li>"
+//         // "<li>" + soyadi + "</li>"
+//         // "</ul>";
+//         let html = ´ <
+//             ul >
+//             <
+//             li > $ { adi } < /li> <
+//         li > $ { soyadi } < /li> < /
+//         ul >
 
-            ´;
-        document.body.innerHTML = html;
+//             ´;
+//         document.body.innerHTML = html;
+//     }
+//templateLiteralHtmlTemplate();
+
+
+//+++++++++++++++++++++++++++++++++++
+//constructor-1
+function Student(adi, soyadi, meslek, dogumTarihi) {
+    this.adi = adi;
+    this.soyadi = soyadi;
+    this.meslek = meslek;
+    this.dogumTarihi = dogumTarihi;
+    console.log(this);
+    this.yas = function() {
+        //return 2022 - dogumTarihi;
+        return new Date().getFullYear() - dogumTarihi;
     }
-    //templateLiteralHtmlTemplate();
+}
+let sonuc = new Student("Hamit", "Mızrak", "BM", 1985);
+console.log(sonuc.yas());
+
+//++++++++++++++++++++++++++++++++++++++
 
 
-///////////////////////////////////
-//constructor
+
+
+
+//this
+//console.log(this)
