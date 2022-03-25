@@ -1068,21 +1068,35 @@ function toplama() {
 //toplama();
 
 ////////////////////////////////////////
+// function changeParagraf() {
+//     // alert("onclick Alert")
+//     // document.getElementById("paragraf_id").innerHTML="<b>Ben Dom'dan geldim</b>";
+//     // document.getElementById("paragraf_id").innerText="<b>Ben Dom'dan geldim</b>";
+//     // document.getElementById("paragraf_id").innerHTML=Date();   
+//     //Id ye göre olduğu için element (çünkü tek id olur, id ler aynı olmaz)   //name e göre olunca elements (birden fazla name yapısı olabilir)
+//     //s takısı olunca [] dizi??
+//     //genelde en çok id sine göre kullanılır.
+
+//     //NAME göre çağırma
+//     // document.getElementsByName("paragraf_name")[0].innerHTML="<b>Ben Dom'dan geldim</b>";
+
+//     //Class göre çağırma
+//     // document.getElementsByClassName("paragraf_class")[0].innerHTML="<b>Ben Dom'dan geldim</b>";
+
+//     //Tag'e göre çağırma
+//     document.getElementsByTagName("p")[0].innerHTML = "<b>Ben Dom'dan geldim</b>";
+// }
+
 function changeParagraf() {
-    // alert("onclick Alert")
-    // document.getElementById("paragraf_id").innerHTML="<b>Ben Dom'dan geldim</b>";
-    // document.getElementById("paragraf_id").innerText="<b>Ben Dom'dan geldim</b>";
-    // document.getElementById("paragraf_id").innerHTML=Date();   
-    //Id ye göre olduğu için element (çünkü tek id olur, id ler aynı olmaz)   //name e göre olunca elements (birden fazla name yapısı olabilir)
-    //s takısı olunca [] dizi??
-    //genelde en çok id sine göre kullanılır.
+    //id
+    let valueParagraf = document.getElementById("paragraf_id");
 
-    //NAME göre çağırma
-    // document.getElementsByName("paragraf_name")[0].innerHTML="<b>Ben Dom'dan geldim</b>";
+    //HTML
+    valueParagraf.innerHTML = "<i>Html</i>";
 
-    //Class göre çağırma
-    // document.getElementsByClassName("paragraf_class")[0].innerHTML="<b>Ben Dom'dan geldim</b>";
+    //CSS
+    valueParagraf.style.color = "blue";
+    valueParagraf.style.fontSize = "25px";
+    valueParagraf.style.border = "2px solid rgba(25, 55, 2, .8)"
 
-    //Tag'e göre çağırma
-    document.getElementsByTagName("p")[0].innerHTML = "<b>Ben Dom'dan geldim</b>";
 }
