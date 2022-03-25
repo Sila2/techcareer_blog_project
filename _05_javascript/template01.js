@@ -961,7 +961,22 @@ let dizi = ['html', 'css', 'js', 'Javascript']
 
 
 ///////////////////////////////////////
+//1-)
+//Multi Line Template Literal
+let templateLiteralMultiLine = () => {
 
+        //escape characters: \n 
+        let normalString = "Merhabalar nasılsınız\nAlt satır";
+        console.log(normalString);
+
+        //ES6:
+        //Multi Line Template Literal
+        let templateString = `Merhabalar nasılsınız
+  Alt satır`;
+        console.log(templateString);
+
+    }
+    //templateLiteralMultiLine();
 
 
 //2-)
@@ -978,25 +993,25 @@ let templateLiteralInterpolation = () => {
 //3-)
 //Html Template
 let templateLiteralHtmlTemplate = () => {
-    const adi = "Hamit",
-        soyadi = "Mızrak";
+        const adi = "Hamit",
+            soyadi = "Mızrak";
 
-    // const htmlShow =
-    //     "<ul>" +
-    //     "<li>" + adi + "</li>"
-    // "<li>" + soyadi + "</li>"
-    // "</ul>";
-    let html = ´ <
-        ul >
-        <
-        li > $ { adi } < /li> <
-    li > $ { soyadi } < /li> < /
+        // const htmlShow =
+        //     "<ul>" +
+        //     "<li>" + adi + "</li>"
+        // "<li>" + soyadi + "</li>"
+        // "</ul>";
+        let html = ´ <
+            ul >
+            <
+            li > $ { adi } < /li> <
+        li > $ { soyadi } < /li> < /
         ul >
 
-        ´;
-    document.body.innerHTML = html;
-}
-templateLiteralHtmlTemplate();
+            ´;
+        document.body.innerHTML = html;
+    }
+    //templateLiteralHtmlTemplate();
 
 
 ///////////////////////////////////
