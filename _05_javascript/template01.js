@@ -938,7 +938,7 @@ let dizi = ['html', 'css', 'js', 'Javascript']
 //     console.log(normalString2);
 
 //     //ES6
-//     let templateString = ´Merhaba backtick´;
+//     let templateString = `Merhaba backtick`;
 //     console.log(templateString);
 // }
 // templateLiteralTutorials();
@@ -1033,24 +1033,32 @@ function Student(adi, soyadi, meslek, dogumTarihi) {
 //++++++++++++++++++++++++++++++++++++++
 //this: bu yapı demektir. bulunduğumuz objeyi çağırmak veya root dizini çağırmak
 let thisTutorials = () => {
-    console.log(this);
-    let sayi = this;
-    //alert(sayi);
-    //return this;
-}
-thisTutorials()
+        console.log(this);
+        let sayi = this;
+        //alert(sayi);
+        //return this;
+    }
+    //thisTutorials()
 
 let thisFunctionTutorials = () => {
-    let person = {
-        adi: "Hamit",
-        soyadi: "Mızrak",
-        adSoyad: function() {
-            return this.adi + " " + this.soyadi;
+        let person = {
+            adi: "Hamit",
+            soyadi: "Mızrak",
+            adSoyad: function() {
+                return this.adi + " " + this.soyadi;
+            }
         }
+        console.log(person.adSoyad())
     }
-    console.log(person.adSoyad())
+    //thisFunctionTutorials();
+    ////////////////////////
+    //Event: bir olaydan sonra meydana gelebilecek başka olaylar.
+
+function toplama() {
+    alert("onclick Alert")
 }
-thisFunctionTutorials();
+toplama();
+
 
 
 
