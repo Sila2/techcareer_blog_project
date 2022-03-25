@@ -904,5 +904,34 @@ let object2 = () => {
 object2();
 
 
+////////////////////////////
+
+let object2 = () => {
+    let person = {
+        firstName: "Hamit",
+        job: "Computer Engineer",
+        middleName: "Göbek Adı"
+        hesaplama: function(sayi1, sayi2) {
+            return sayi1 + sayi2;
+        }
+        damar: {
+            damarAdi: "Toplar Damar",
+            damarTuru: "damar turu 4521"
+        },
+        diller: ["Javascript", "Java", "c#", "Python"],
+        dillerOzellikler: {
+            roles: "asd"
+        }
+    };
+    console.log(person)
+    console.log(person["damar"]["damarAdi"]);
+    console.log(person.diller[0])
+}
+object2();
+
+////////////////////////////////////////
+
+
+
 ///////////////////////////////////
 //constructor
