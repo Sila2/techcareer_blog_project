@@ -1100,3 +1100,10 @@ function changeParagraf() {
     valueParagraf.style.border = "2px solid rgba(25, 55, 2, .8)"
 
 }
+
+//DOM attributes
+// let result=document.getElementsByTagName("a")[0].getAttribute("href");
+// let result=document.querySelector("#a_id").getAttribute("href");
+//let result=document.querySelector("#a_id").setAttribute("src","deneme.png");
+// alert(result)
+// alert("deneme")

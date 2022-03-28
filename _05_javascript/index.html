@@ -18,8 +18,24 @@
     <!-- external js -->
     <script src="template01.js"></script>
 
+    <!-- <script>
+    //Sağ click closed
+    $(document).ready(function () {
+        $(this).on("contextmenu", function () {
+            return false;
+        })
+    });
+</script> -->
 
-    <!-- // -->
+    <style>
+        .cssAllDom {
+            width: 25%;
+            height: 250px;
+            background-color: red;
+            color: orange;
+        }
+    </style>
+
 </head>
 
 <body class="container">
@@ -42,6 +58,24 @@
     <!-- dom=JS ile Html veya Css bileşenlerini yönetmeye denir. -->
     <p id="paragraf_id" name="paragraf_name" class="paragraf_class"></p>
     <button onclick="changeParagraf()" class="btn btn-primary ml-3 mt-3">Dom Click</button>
+
+    <button onclick="changeParagraf()" class="btn btn-primary ml-3 mt-3">Dom Click</button>
+    <hr>
+
+    <div id="div_dom"></div>
+
+
+    <button onclick="changeDiv()" class="btn btn-primary ml-3 mt-3">Div Click</button>
+
+    <script>
+        function changeDiv() {
+            let valueParagraf = document.getElementById("div_dom");
+            valueParagraf.classList.add("cssAllDom");
+        }
+    </script>
+    <hr>
+    <a id="a_id" href="https://www.techcareer.net/mainpage/en/" target="_blank">techcareer</a>
+
 
     <!-- <form action="">
     <input type="radio" name="adi" id="x1"> JS <br>
