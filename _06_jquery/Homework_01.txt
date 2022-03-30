@@ -12,12 +12,17 @@ npm araştıralım? (Node Package Manager)
 --Sistemdeki paketleri update etmek
 
 
-CLI nedir?
-
+CLI nedir? (Command Line Interface)
+-Referans parametreleri kullanılarak bilgisayar ile iletişimi sağlayan komut satırı arayüzüdür.
 
 
 Bower nedir?
-
+-Twitter tarafından geliştirilen bir paket yöneticisidir.
+-Web uygulamalarındakullanılan kütüphanelerin indirilmesi ve birkaç süreç ile projeye entegre edilmesi uğraştırıcı olabilir.
+-Bower ile bu süreç kısalmaktadır.
+-<script> tagı kullanılarak projeye gerekli kütüphaneler eklenebilir.
+-Bu sayede kütüphanelerin versiyonlarının güncellenmesi gibi durumlarda kolaylık sağlar.
 
 
 WebPack nedir?
+-Web uygulamalarında kullanılan JavaScript dosyalarını tek parça haline getirmek için kullanılan modül paketleyicisidir.
