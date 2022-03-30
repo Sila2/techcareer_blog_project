@@ -27,7 +27,7 @@ $(function() {
         .css('padding', '25px')
 
     //pseudo element
-    $('p:contains(html)').css('box-shadow', '1px 1px 2px 5px rgba(2,2,2,.8')
+    $('p:contains(html)').css('box-shadow', '1px 1px 2px 5px rgba(2,2,2,.8)')
 
     $("ul li:not(':contains(css 3)')")
         .css('color', 'blue')

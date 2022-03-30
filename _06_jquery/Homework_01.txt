@@ -1,0 +1,23 @@
+Libraries ile Framework arasındaki farklar nelerdir?
+-Framework bir uygulama çatısıdır, geliştirilen programlar bu çatı çerçevesinde geliştirilir.
+-Libraries ise hazır ve kolay bir şekilde erişebileceğimiz yapılardır. Aynı zamanda işleri kolaylaştıran kütüphanelerdir.
+
+
+npm araştıralım? (Node Package Manager)
+-Tamamen javascript dili kullanılarak geliştirilen ve komut sistemi üzerinden çalışan paket yönetim sistemidir.
+-Npm ile yapılabilecek şeyler şöyledir:
+--Otomatik ya da manuel olarak paketleri yükleme
+--Sistemdeki paketleri silmek
+--Sistemdeki paketleri listeleme
+--Sistemdeki paketleri update etmek
+
+
+CLI nedir?
+
+
+
+Bower nedir?
+
+
+
+WebPack nedir?
