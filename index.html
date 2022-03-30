@@ -50,8 +50,12 @@
                         <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fa fa-user"></i> Üye</a>
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
+
+                            <!-- uye ol -->
                             <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#register" href="#">Üye Ol</a>
-                            <a class="dropdown-item" href="#">Üye Giriş</a>
+
+                            <!-- uye girisi -->
+                            <button class="dropdown-item" id="byn_giris"><i class="fa fa-user-lock"></i> Üye Giriş</button>
                         </div>
                     </li>
                 </ul>
@@ -62,6 +66,40 @@
             </div>
         </div>
     </nav>
+
+    <!-- login start -->
+    <div class="modal fade" id="myUye" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Üye Girisi</h5>
+                    <button type="button" class="btn-close btn-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form method="get" action="">
+                        <div class="form-control">
+                            <input type="email" id="user_email" name="user_email" placeholder="Email adresinizi girin" class="form-control" required>
+                            <span id="validation_email" class="text-danger"></span>
+                        </div>
+                        <div class="form-control">
+                            <input type="password" id="user_password" name="user_password" class="form-control" required>
+                            <span id="validation_password" class="text-danger"></span>
+                        </div>
+                        <div class="mt-3">
+                            <input type="reset" class="btn btn-danger text-uppercase" value="temizle">
+                            <button id="btnSubmit" type="submit" class="btn btn-primary text-uppercase" value="gönder">Gönder</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Kapat</button>
+                    <button type="button" class="btn btn-primary">Kaydet</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- login ends -->
 
     <!-- modal start register -->
     <!-- Modal -->
