@@ -82,19 +82,17 @@ var object = {
 
 //template
 var template =
-    ( <
-        div >
-        <
-        h1 > başlık < /h1> <
-        p className = "text-danger" > Lorem ipsum dolor sit amet. < /p> <
-        ul className = "list-group" >
-        <
-        li className = "list-group-item active" > { variable1 } < /li> <
-        li className = "list-group-item" > { variable2 } < /li> <
-        li className = "list-group-item" > { variable3 } < /li> <
-        li className = "list-group-item" > { variable4 } < /li> < /
-        ul > <
-        /div>
+    ( 
+        <div >
+        <h1 > başlık </h1> 
+        <p className = "text-danger" > Lorem ipsum dolor sit amet. </p> 
+        <ul className = "list-group" >
+        <li className = "list-group-item active" > { variable1 } </li> 
+        <li className = "list-group-item" > { variable2 } </li> 
+        <li className = "list-group-item" > { variable3 } </li> 
+        <li className = "list-group-item" > { variable4 } </li> 
+        </ul > 
+        </div>
     );
 
 //ReactDOM
